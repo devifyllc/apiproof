@@ -1,0 +1,14 @@
+# Core XML processing dependencies
+lxml>=4.9.0
+xmlschema>=2.0.0
+
+# JSON processing dependencies
+jsonschema>=4.0.0
+
+# HTML report generation
+jinja2>=3.1.0
+
+# Testing dependencies
+pytest>=7.0.0
+pytest-cov>=4.0.0
+hypothesis>=6.0.0

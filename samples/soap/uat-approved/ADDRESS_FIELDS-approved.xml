@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <SOAP-ENV:Header xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"></SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+        <m:ServiceResponseType xmlns:m="http://wmworld/services">
+            <ServiceResponse>
+                <GetFormFields>
+                    <FieldGroup Description="ADDRESS_FIELDS">
+                        <Field FieldId="street" Label="Street Address" Required="TRUE" InputType="text"></Field>
+                        <Field FieldId="locality" Label="City" Required="TRUE" InputType="text"></Field>
+                        <Field FieldId="region" Label="State/Region" Required="TRUE" InputType="dropdown"></Field>
+                        <Field FieldId="postal" Label="Postal Code" Required="TRUE" InputType="text"></Field>
+                    </FieldGroup>
+                </GetFormFields>
+                <StatusResponse>
+                    <Status>SUCCESS</Status>
+                    <TransactionId>d78b1cb0-ef01-484b-a46f-6b8d6f27cca2</TransactionId>
+                    <ReturnCode>0</ReturnCode>
+                    <StatusCode>C0000</StatusCode>
+                    <StatusMessage>getFormFields Request completed</StatusMessage>
+                </StatusResponse>
+            </ServiceResponse>
+        </m:ServiceResponseType>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

@@ -1,0 +1,47 @@
+{
+  "FormFields": {
+    "Organization": {
+      "DivisionCode": "DIV01"
+    },
+    "FieldGroup": {
+      "Description": "ADDRESS_FIELDS",
+      "Fields": [
+        {
+          "FieldId": "street",
+          "Label": "Street Address",
+          "DisplayName": "street_address",
+          "Required": "TRUE",
+          "InputType": "text"
+        },
+        {
+          "FieldId": "locality",
+          "Label": "City",
+          "DisplayName": "city_name",
+          "Required": "TRUE",
+          "InputType": "text"
+        },
+        {
+          "FieldId": "region",
+          "Label": "State/Region",
+          "DisplayName": "state_region",
+          "Required": "TRUE",
+          "InputType": "dropdown"
+        },
+        {
+          "FieldId": "postal",
+          "Label": "Postal Code",
+          "DisplayName": "postal_code",
+          "Required": "TRUE",
+          "InputType": "text"
+        },
+        {
+          "FieldId": "country",
+          "Label": "Country",
+          "DisplayName": "country_name",
+          "Required": "FALSE",
+          "InputType": "dropdown"
+        }
+      ]
+    }
+  }
+}

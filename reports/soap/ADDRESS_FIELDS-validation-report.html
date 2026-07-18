@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOAP Contract Validation Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .status {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .section h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        .metadata {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 10px;
+        }
+        .metadata-label {
+            font-weight: bold;
+            color: #666;
+        }
+        .violation {
+            background-color: #ffebee;
+            padding: 10px;
+            margin: 10px 0;
+            border-left: 4px solid #f44336;
+            border-radius: 3px;
+        }
+        .difference {
+            background-color: #fff3e0;
+            padding: 10px;
+            margin: 10px 0;
+            border-left: 4px solid #ff9800;
+            border-radius: 3px;
+        }
+        .path {
+            font-family: monospace;
+            background-color: #f5f5f5;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="status">✓ VALIDATION PASSED</div>
+        <p>PROD response conforms to UAT-approved contract</p>
+    </div>
+    
+    <div class="section">
+        <h2>Validation Summary</h2>
+        <div class="metadata">
+            <div class="metadata-label">Status:</div>
+            <div>PASS</div>
+            
+            <div class="metadata-label">UAT Response:</div>
+            <div>samples/soap/uat-approved/ADDRESS_FIELDS-approved.xml</div>
+            
+            <div class="metadata-label">PROD Response:</div>
+            <div>samples/soap/prod-actual/ADDRESS_FIELDS-actual.xml</div>
+            
+            <div class="metadata-label">Schema:</div>
+            <div>contracts/soap/GetFormFields-schema.xsd</div>
+            
+            <div class="metadata-label">Timestamp:</div>
+            <div>2026-07-17 23:12:07</div>
+            
+            <div class="metadata-label">System Version:</div>
+            <div>0.1.0</div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>Contract Violations (0)</h2>
+        <p>No contract violations found. PROD response structure matches UAT schema.</p>
+        
+    </div>
+    
+    <div class="section">
+        <h2>Value Differences (0)</h2>
+        <p>No value differences found between UAT and PROD responses.</p>
+        
+    </div>
+</body>
+</html>
